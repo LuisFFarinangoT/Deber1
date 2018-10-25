@@ -72,17 +72,17 @@ void loop() {
   *
   */
 
-  for(;i<6;i++)
-{  long  numale=random(6);//
+  for(;i<6;i++)//encendido
+{  long  numale=random(6);//creacion de un numero random con un rango de 0 a 5 segun la variale random
   digitalWrite(leds[numale],HIGH);//encendido de leds segun la condicion 
   delay(200);
   }
   
   //no se reinicia la variable de conteo ya que sera necesaria para apagar los leds
-  for(;i>=0;i--)//
+  for(;i>=0;i--)//apagado 
   {
-    long  numale=random(6);
-  digitalWrite(leds[numale],LOW);//encendido de leds segun la condicion 
+    long  numale=random(6);//creacion de un numero random con un rango de 0 a 5 segun la variale random
+  digitalWrite(leds[numale],LOW);//apagado de leds segun la condicion 
   delay(200);
   
   
